@@ -1,0 +1,31 @@
+
+  input[type="text"] {
+    border: solid 2px ;
+    padding: 10px;
+    border-radius: 8px;
+    color:  #6764CB;
+    margin-right: 4px;
+    display: inline-block;
+    width: 30%;
+  }
+ 
+  button {
+    padding: 10px;
+    border: solid 2px;
+    background: #6764CB ;
+    color: white;
+    border-radius: 8px;
+  }
+  @media (min-width: 500px) and (max-width: 768px) {
+    .results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    input[type="text"] {
+        width: 70%;
+    }   
+  }
+  @media (max-width: 499px) {
+    .results {
+        grid-template-columns: 1fr;
+    }    
+  }
