@@ -3,7 +3,7 @@ import { HousinglocationComponent } from '../housinglocation/housinglocation.com
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [HousinglocationComponent],
   template: ` 
   
   <section>
@@ -11,6 +11,9 @@ import { HousinglocationComponent } from '../housinglocation/housinglocation.com
         <input type="text" placeholder="Filter by city" />
         <button class="primary" type="button">Search</button>
       </form>
+    </section>
+    <section class="results">
+      <app-housinglocation></app-housinglocation>
     </section>
 
     `,
